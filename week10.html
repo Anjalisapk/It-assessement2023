@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //1
+    // Declare variables with different data types
+    let numVar = 42;
+    let floatVar = 3.14159;
+    let strVar = "Hello, world!";
+    let boolVar = true;
+
+    // Display variable values on the webpage
+    document.write("Numeric variable: " + numVar + "<br>");
+    document.write("Float variable: " + floatVar + "<br>");
+    document.write("String variable: " + strVar + "<br>");
+    document.write("Boolean variable: " + boolVar + "<br>");
+
+
+
+    //2
+    // Prompt user for name and student ID
+    let name = prompt("Enter your name:");
+    let studentId = prompt("Enter your student ID:");
+
+    // Display name and student ID in an alert dialog box
+    alert("Name: " + name + "\nStudent ID: " + studentId);
+
+
+    //3
+    // Prompt user for their marks
+    let marks = prompt("Enter your marks:");
+
+    // Convert marks to a number
+    marks = parseInt(marks);
+
+    // Determine the student's division based on their marks
+    if (marks >= 80 && marks <= 100) {
+        document.write("Distinction");
+    } else if (marks >= 60 && marks < 80) {
+        document.write("First Division");
+    } else if (marks >= 50 && marks < 60) {
+        document.write("Second Division");
+    } else if (marks >= 40 && marks < 50) {
+        document.write("Third Division");
+    } else {
+    document.write("Fail");
+    }
+
+        //4
+            // Prompt user for a number between 1 and 7
+    let number = prompt("Enter a number between 1 and 7:");
+
+    // Convert number to an integer
+    number = parseInt(number);
+
+    // Determine the day based on the number using switch case
+    switch (number) {
+    case 1:
+        document.write("Sunday");
+        break;
+    case 2:
+        document.write("Monday");
+        break;
+    case 3:
+        document.write("Tuesday");
+        break;
+    case 4:
+        document.write("Wednesday");
+        break;
+    case 5:
+        document.write("Thursday");
+        break;
+    case 6:
+        document.write("Friday");
+        break;
+    case 7:
+        document.write("Saturday");
+        break;
+        default:
+        document.write("Invalid");
+        break;
+    }
+        //8
+    // Define an array of colors
+    let myColor = ["Red", "Green", "White", "Black"];
+
+    // Join all elements of the array into a string with commas
+    let commaSeparated = myColor.join(",");
+    document.write(commaSeparated + "<br>");
+
+    // Join all elements of the array into a string with plus signs
+    let plusSeparated = myColor.join("+");
+    document.write(plusSeparated + "<br>");
+
+    // The toString() function can also be used to achieve the same result
+    let toStringSeparated = myColor.toString();
+    document.write(toStringSeparated);
+
+</script>
+</body>
+</html>
